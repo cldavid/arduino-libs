@@ -1,3 +1,11 @@
+//
+//  time.h
+//  ds_motor
+//
+//  Created by David Cluytens on 08/10/12.
+//  Copyright (c) 2012 Cluytens.net All rights reserved.
+//
+
 #ifndef __DC_TIME__
 #define __DC_TIME__
 #include <stddef.h>

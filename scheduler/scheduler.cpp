@@ -3,7 +3,7 @@
 //  ds_motor
 //
 //  Created by David Cluytens on 12/10/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Cluytens.net All rights reserved.
 //
 
 #include "Arduino.h"

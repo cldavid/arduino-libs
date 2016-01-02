@@ -3,7 +3,7 @@
 //  ds_motor
 //
 //  Created by David Cluytens on 08/10/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Cluytens.net All rights reserved.
 //
 
 #ifndef ds_motor_dc_eeprom_h

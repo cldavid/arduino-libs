@@ -1,10 +1,17 @@
+//
+//  time.cpp
+//  ds_motor
+//
+//  Created by David Cluytens on 08/10/12.
+//  Copyright (c) 2012 Cluytens.net All rights reserved.
+//
 #include <stdio.h>
 #include <string.h>
 #include "println.h"
 #include "time.h"
 
-static const char *strWday[] 	= {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
-static const char *strMonth[] 	= {"January", "Februari", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+//static const char *strWday[] 	= {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+//static const char *strMonth[] 	= {"January", "Februari", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
 
 #define LEAP_YEAR(Y)     (((Y)>0) && !((Y)%4) && ( ((Y)%100) || !((Y)%400)))
 
