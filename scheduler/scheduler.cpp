@@ -8,21 +8,13 @@
 
 #include "Arduino.h"
 #include "scheduler.h"
-#include "println.h"
+#include <Console.h>
+
 
 void SchedulerClass::set_event_list(event_t *list, size_t size) {
     events      = list;
     event_size  = size;
     max_index   = size / sizeof(event_t);
-    println("Setting event %p size %u index %u", list, size, max_index);
-}
-
-void SchedulerClass::print_events(void) {
-    println("Max_index: %u", max_index);
-    for (size_t i = 0; i < max_index; i++) {
-        println("i: %d func %p", i, events[i].event_cb);
-    }
-    return;
 }
 
 void SchedulerClass::update_events(unsigned long new_epoch) {

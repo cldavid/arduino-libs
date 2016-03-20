@@ -7,7 +7,6 @@
 //
 #include <stdio.h>
 #include <string.h>
-#include "println.h"
 #include "time.h"
 
 //static const char *strWday[] 	= {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
@@ -17,7 +16,6 @@
 
 void TimeClass::time_init() {
 	memset(&sysTime, 0, sizeof(tv_t));
-    
     return;
 }
 
@@ -49,6 +47,7 @@ unsigned long TimeClass::getUnixTime() {
 	return sysTime.tv_sec;
 }
 
+#ifdef __DC_TIME_HAS_HUMAN_TIME__
 void TimeClass::getTime(struct tm *time) {
     unsigned long tmp   = getUnixTime();
 
@@ -115,4 +114,5 @@ const char *TimeClass::getHumanTime(void){
     Time.ctime(humanTime, sizeof(humanTime));
     return humanTime;
 }
+#endif //__DC_TIME_HAS_HUMAN_TIME__
 TimeClass Time;

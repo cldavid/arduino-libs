@@ -10,6 +10,7 @@
 #include <stdarg.h>
 #include "Arduino.h"
 #include "println.h"
+#include <Console.h>
 
 static char        buffer[S_WIDTH];
 
@@ -22,5 +23,5 @@ __attribute__ ((noinline)) void println(const char *format, ...) {
     vsnprintf(buffer, S_WIDTH, format, args);
     va_end(args);
     
-    Serial.println(buffer);
+    Console.println(buffer);
 }

@@ -27,7 +27,6 @@ class SchedulerClass
     size_t       max_index;
     
     public:
-        void    print_events(void);
         void    set_event_list(event_t *list, size_t size);
         void    update_events(unsigned long new_epoch);
         void    update(unsigned long prev_time, unsigned long cur_time);
